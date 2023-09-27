@@ -2,9 +2,7 @@
 layout: layout.njk
 ---
 
-<div id="img_container">
-    <img id="profile" src="/images/profile.webp" alt="Profile" style="opacity: 0" />
-</div>
+![Profile](/images/profile.webp)
 
 # Hello, I'm Safin
 
@@ -23,26 +21,11 @@ I love to build low-level \*nix apps, security training tools, websites—and ju
 <a href="/blog" target="_self">Blog</a> · [GitHub](https://github.com/safinsingh) · [LinkedIn](https://www.linkedin.com/in/safinsingh/)
 
 <style>
-    #img_container {
-        background-color: #81c0cb;
-    }
-    #img_container, img {
-        width: 200px;
-        height: 200px
-    }
     img {
-        transition: all 0.2s
+        width: 200px;
+        height: 200px;
     }
     h1 {
         margin: 10px 0;
     }
 </style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const image = document.getElementById("profile");
-        if (!image.complete) {
-            image.addEventListener("load", () => image.style.opacity = "1");
-        }
-    }, false);
-</script>
