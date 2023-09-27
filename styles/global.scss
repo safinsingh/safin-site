@@ -1,0 +1,28 @@
+@import "./reset.scss";
+@import "./fonts.scss";
+
+:root {
+	font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+	letter-spacing: 0.03em;
+
+	--accent: #0000ff;
+}
+
+body {
+	margin: 0 auto;
+	padding: 20px;
+	font-size: 16px;
+}
+
+a {
+	color: black;
+	text-decoration: underline solid var(--accent) 2px !important;
+}
+
+a:hover {
+	color: var(--accent);
+}
+
+.muted {
+	color: #808080;
+}

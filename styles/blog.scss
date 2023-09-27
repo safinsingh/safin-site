@@ -1,0 +1,33 @@
+body {
+	max-width: 800px;
+	position: relative;
+	padding-bottom: 32px;
+}
+
+.meta {
+	margin-bottom: 10px;
+	span {
+		display: inline;
+	}
+}
+
+blockquote {
+	color: #808080;
+	border-left: 2px solid #808080;
+	padding-left: 10px;
+
+	font-style: italic;
+
+	* {
+		display: inline;
+	}
+}
+
+#content *:not(li, li > ul, pre > *, h2 + h3) {
+	margin: 16px 0;
+}
+
+pre {
+	border: 1px solid black;
+	font-family: "JetBrains Mono", monospace;
+}

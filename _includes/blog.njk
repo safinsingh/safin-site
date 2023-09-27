@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include "meta.njk" %}
+
+		<link rel="stylesheet" href="/styles/global.css" type="text/css" />
+		<link rel="stylesheet" href="/styles/blog.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/github.min.css"
+		/>
+		<title>Safin Singh | {{ title }}</title>
+	</head>
+	<body>
+		<h1>{{ title }}</h1>
+		<div class="meta">
+			<span>{{ date.toLocaleDateString() }} · </span>
+			<span id="read_time">-1 min read</span>
+		</div>
+		<div id="content">
+			{{ content | safe }}
+		</div>
+		<a href="/blog" className="go_back">Go back</a>
+	</body>
+	<script>
+		const read_time = (text) => {
+			const words = text.split(" ").length;
+			const minutes = Math.ceil(words / 200);
+			return minutes;
+		};
+
+		const text = document.getElementById("content").innerText;
+		document.getElementById("read_time").innerText = `${read_time(text)} min read`;
+	</script>
+</html>
