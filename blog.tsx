@@ -16,7 +16,7 @@ export default function ({ search }: PageData) {
 				</>
 			))}
 			<br />
-			<a href="/" className="go_back">
+			<a href="/" className="go_back" target="_self">
 				Go back
 			</a>
 		</>

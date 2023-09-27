@@ -20,7 +20,7 @@ I love to build low-level \*nix apps, security training tools, websites—and ju
 
 <br>
 
-[Blog](/blog) · [GitHub](https://github.com/safinsingh) · [LinkedIn](https://www.linkedin.com/in/safinsingh/)
+<a href="/blog" target="_self">Blog</a> · [GitHub](https://github.com/safinsingh) · [LinkedIn](https://www.linkedin.com/in/safinsingh/)
 
 <style>
     #img_container {
@@ -39,6 +39,10 @@ I love to build low-level \*nix apps, security training tools, websites—and ju
 </style>
 
 <script>
-    const image = document.getElementById("profile");
-    image.addEventListener("load", () => image.style.opacity = "1");
+    document.addEventListener("DOMContentLoaded", () => {
+        const image = document.getElementById("profile");
+        if (!image.complete) {
+            image.addEventListener("load", () => image.style.opacity = "1");
+        }
+    }, false);
 </script>
