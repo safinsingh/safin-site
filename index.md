@@ -10,7 +10,7 @@ I'm a student and programmer interested in cybersecurity. I'm a 4x CyberPatriot 
 
 <br>
 
-I love to challenge myself with difficult problems (`homework due yesterday` and `debugging Rust errors` to name a few). In doing so, I've developed an aptitude for learning new things and simplifying their core concepts to [teach them to others](https://www.youtube.com/playlist?list=PLcn9NsWbb8s4wQrX0Qi5G4kRifQHxCV9-).
+I love to challenge myself with difficult problems (`homework due yesterday` and `debugging Rust errors` to name a few). In doing so, I've developed an aptitude for learning new things and simplifying their core concepts to <a href="/posts/linux-visually/" target="_self">teach them to others</a>.
 
 <br>
 
