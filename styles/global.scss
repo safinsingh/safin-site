@@ -1,10 +1,7 @@
 @import "./reset.scss";
-@import "./fonts.scss";
 
 :root {
-	font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-	letter-spacing: 0.03em;
-
+	font-family: "Inter", sans-serif;
 	--accent: #0000ff;
 }
 
@@ -16,7 +13,9 @@ body {
 
 a {
 	color: black;
-	text-decoration: underline solid var(--accent) 2px !important;
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+	text-decoration-thickness: 2px;
 }
 
 a:hover {
@@ -25,4 +24,25 @@ a:hover {
 
 .muted {
 	color: #808080;
+}
+
+p {
+	font-weight: 400;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: black;
 }

@@ -10,7 +10,9 @@ export default function ({ search }: PageData) {
 			<h1>Posts</h1>
 			{posts.filter(Boolean).map((post) => (
 				<>
-					<a href={post!.data.url} target="_self">{post!.data.title}</a>
+					<a href={post!.data.url} target="_self">
+						{post!.data.title}
+					</a>
 					<span className="muted"> · {post!.data.description}</span>
 					<br />
 				</>
