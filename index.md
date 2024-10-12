@@ -32,7 +32,7 @@ I love to build low-level \*nix apps, security training tools, websites—and ju
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: blue;
+    background-color: var(--accent);
   }
   img {
     width: 200px;
