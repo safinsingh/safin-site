@@ -7,7 +7,7 @@ layout: layout.njk
   <h1>Hello, I'm Safin</h1>
 </div>
 
-I'm an Electrical Engineering & Computer Sciences (EECS) student at UC Berkeley interested in computer systems and mathematics. I'm currently working on RISC-V SoC tooling as an Undergraduate Researcher at the [Berkeley SLICE Lab](https://slice.eecs.berkeley.edu/).
+I'm an Electrical Engineering & Computer Sciences (EECS) student at UC Berkeley interested in computer systems and mathematics. I'm currently working on RISC-V SoC simulation tooling as an Undergraduate Researcher at the [Berkeley SLICE Lab](https://slice.eecs.berkeley.edu/).
 
 <br>
 
