@@ -12,8 +12,8 @@ body {
 }
 
 blockquote {
-	color: #808080;
-	border-left: 2px solid #808080;
+	color: var(--muted);
+	border-left: 2px solid var(--muted);
 	padding-left: 10px;
 
 	font-style: italic;
@@ -28,6 +28,6 @@ blockquote {
 }
 
 pre {
-	border: 1px solid black;
+	border: 1px solid var(--foreground);
 	font-family: "JetBrains Mono", monospace;
 }
