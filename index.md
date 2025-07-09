@@ -7,7 +7,7 @@ layout: layout.njk
   <h1>Hi, I'm Safin</h1>
 </div>
 
-I'm studying EE&CS at UC Berkeley and I'm curious about everything from silicon and systems to software and statistics. I'm currently working on RISC-V SoC simulation tooling as an Undergraduate Researcher at the [Berkeley SLICE Lab](https://slice.eecs.berkeley.edu/).
+I'm studying EE & CS at UC Berkeley and I'm curious about everything from silicon and systems to software and statistics. I'm currently working on RISC-V SoC simulation tooling as an Undergraduate Researcher at the [Berkeley SLICE Lab](https://slice.eecs.berkeley.edu/).
 
 <br>
 
