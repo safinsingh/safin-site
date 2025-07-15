@@ -1,30 +1,97 @@
-@import "./reset.scss";
+@use "./reset.scss";
+
+@font-face {
+	font-family: 'rt';
+	src: url("/fonts/rtvfr.ttf");
+	font-display: swap;
+	font-weight: 100 900;
+}
+
+@font-face {
+	font-family: 'rt';
+	src: url("/fonts/rtvfi.ttf");
+	font-style: italic;
+	font-weight: 100 900;
+	font-display: swap;
+}
 
 :root {
-	font-family: "Inter", sans-serif;
-	--accent: #0000ff;
-	--background: #ffffff;
-	--foreground: #000000;
-	--muted: #808080;
+	font-family: "rt", serif;
+	--background: #FAF9F7;
+	--superlight: #faf9f785;
+	--foreground: #2D2C2A;
+	--muted: rgba(45, 44, 42, 0.5);
+	--accent: #B2584E;
+	--tint: rgba(178, 88, 78, 0.10);
 }
 
 body {
-	margin: 0 auto;
-	padding: 20px;
-	font-size: 16px;
+	font-size: 18px;
 	background-color: var(--background);
 	color: var(--foreground);
+	padding: 4rem 1.25rem;
+	max-width: 42rem;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 40px;
+	display: inline-block;
+}
+
+#v {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+#circle {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	border: 3px solid var(--accent);
+}
+
+mark {
+	background-color: var(--tint);
 }
 
 a {
 	color: var(--foreground);
 	text-decoration: underline;
-	text-decoration-color: var(--accent);
 	text-decoration-thickness: 2px;
+	text-decoration-color: rgba(178, 88, 78, 0.25);
+
+	&:hover {
+		transition: all 0.2s ease-in-out;
+		text-decoration-color: #B2584E;
+		color: #B2584E;
+	}
 }
 
-a:hover {
-	color: var(--accent);
+.meta-links {
+	font-family: "Work Sans", sans-serif;
+
+	>* {
+		display: inline;
+	}
+}
+
+pre,
+code {
+	font-family: "Recursive", monospace;
 }
 
 .muted {
@@ -36,14 +103,22 @@ p {
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+	width: 6px;
+	height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--muted);
+	background: var(--tint);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--foreground);
+	background: var(--muted);
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+iframe {
+	margin: 15px 0px;
 }

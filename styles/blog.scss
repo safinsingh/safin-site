@@ -6,15 +6,21 @@ body {
 
 .meta {
 	margin-bottom: 10px;
+	font-family: "Work Sans", sans-serif;
+
 	span {
 		display: inline;
 	}
 }
 
 blockquote {
-	color: var(--muted);
-	border-left: 2px solid var(--muted);
-	padding-left: 10px;
+	font-family: "Work Sans", sans-serif;
+	border-left: 8px solid var(--tint);
+	background-color: var(--tint);
+	padding: 8px 16px;
+	font-size: 16px;
+
+	margin: 10px 0px;
 
 	font-style: italic;
 
@@ -23,11 +29,32 @@ blockquote {
 	}
 }
 
-#content *:not(li, li > ul, pre > *, h2 + h3) {
-	margin: 16px 0;
-}
 
 pre {
 	border: 1px solid var(--foreground);
-	font-family: "JetBrains Mono", monospace;
+}
+
+code {
+	font-size: 16px;
+}
+
+pre {
+	margin: 10px 0px;
+}
+
+pre code.hljs {
+	padding: 12px !important;
+	background-color: var(--background);
+}
+
+h2 {
+	padding-bottom: 3px;
+	border-bottom: 1px solid var(--tint);
+	margin-bottom: 4px;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 15px;
 }

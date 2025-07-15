@@ -1,18 +1,27 @@
 {
-	"imports": {
-		"lume/": "https://deno.land/x/lume@v2.3.3/"
-	},
-	"tasks": {
-		"lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-		"build": "deno task lume",
-		"serve": "deno task lume -s"
-	},
-	"compilerOptions": {
-		"jsx": "react-jsx",
-		"jsxImportSource": "npm:react",
-		"types": [
-			"lume/types.ts",
-			"https://unpkg.com/@types/react@18.2.37/index.d.ts"
-		]
-	}
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v3.0.4/",
+    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.10/jsx-runtime.ts"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "lume",
+    "types": [
+      "lume/types.ts"
+    ]
+  },
+  "unstable": [
+    "temporal",
+    "fmt-component"
+  ],
+  "lint": {
+    "plugins": [
+      "https://deno.land/x/lume@v3.0.4/lint.ts"
+    ]
+  }
 }

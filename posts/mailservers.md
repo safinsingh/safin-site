@@ -9,23 +9,23 @@ layout: blog.njk
 
 ### Parts of a Mail Server
 
-1. MTA
+#### MTA
 
 An MTA, or Mail Transfer Agent, is responsible for sending and recieving messages between mail servers. Some popular examples of MTAs include: `postfix`, `exim`, and `sendmail`. An MTA interfaces with other mail servers using SMTP. In order to do this, it identifies the IP of the recipient server using DNS and creates a connection using SMTP.
 
 > Note: it is possible for `exim` to act as both an MTA and MDA; however, it is reccomended to separate the two for modularity reasons
 
-2. MDA
+#### MDA
 
 An MDA, or Mail Delivery Agent, is responsible for delivering mail from a server to individual users' inboxes. One commonly used Linux MDA is `dovecot`.
 
-3. MUA
+#### MUA
 
 An MUA, or Mail User Agent, is responsible for displaying mail to the user and allowing them to read/manipulate it. Web-based MUAs such as Squirrelmail and Roundcube use PHP on the server to interact with the MDA to retrieve and display mail. An MUA can also connect to the MDA via the POP3 and IMAP protocols, which are explained below.
 
 ### Mail-specific Protocols
 
-1. IMAP/POP3
+#### IMAP/POP3
 
 IMAP and POP3 are both protocols used by the MUA and MDA to delivery mail to the user's inbox. A MUA connects to the MDA using either protocol and retrieves the most updated messages recieved by the MTA. IMAP is different from POP3 in that:
 
@@ -34,7 +34,7 @@ IMAP and POP3 are both protocols used by the MUA and MDA to delivery mail to the
 
 > Note: additional features such as "favorite"-ing an email must be implemented separately on the server as they are not necessarily part of the SMTP standard. This interaction typically occurs over HTTP and information is stored in a separate database on the server.
 
-2. SMTP
+#### SMTP
 
 SMTP is used in any interaction with the MTA. For example, when an email is sent through the MUA, it establishes a connection to the MTA over SMTP. From there, the sender's MTA establishes a connection to the recipient's MTA over SMTP.
 
