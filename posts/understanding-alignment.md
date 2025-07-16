@@ -1,6 +1,6 @@
 ---
 title: Understanding Alignment
-pubDate: 2025-07-15
+date: 2025-07-15
 description: Is alignment tractable?
 layout: blog.njk
 ---

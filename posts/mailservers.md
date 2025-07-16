@@ -1,6 +1,6 @@
 ---
 title: Mail Servers
-pubDate: 2023-01-15
+date: 2023-01-15
 description: Architecture and setup for mail servers on Fedora 36
 layout: blog.njk
 ---
